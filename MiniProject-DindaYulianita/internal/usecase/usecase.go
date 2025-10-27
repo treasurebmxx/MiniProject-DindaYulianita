@@ -17,7 +17,7 @@ func NewUsecase(r *repository.Repository) *Usecase {
 
 // =================== REGISTER ===================
 func (u *Usecase) Register(user *models.User) error {
-    // cek apakah email sudah digunakan
+    // untuk mengecek apakah email sudah digunakan
     existingUser, _ := u.repo.GetUserByEmail(user.Email)
     if existingUser != nil {
         return errors.New("email sudah digunakan")
