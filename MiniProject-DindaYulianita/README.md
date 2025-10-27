@@ -1,6 +1,6 @@
 # MiniProject-DindaYulianita
 
-Skeleton REST API in Go (Clean Architecture) for the "Soal dan Ketentuan" assignment.
+Skeleton REST API in Go (Clean Architecture).
 
 ## Features included
 - Auth (register/login) with JWT. Register auto-creates a store.
@@ -9,7 +9,7 @@ Skeleton REST API in Go (Clean Architecture) for the "Soal dan Ketentuan" assign
 - GORM (MySQL) + auto-migrations.
 - Gorilla/mux router.
 - Pagination & basic filtering.
-- Clean-ish project layout: cmd, internal.
+- Clean project layout: cmd, internal.
 
 ## Quick start
 1. Copy `.env.example` to `.env` and edit DB credentials and JWT secret.
