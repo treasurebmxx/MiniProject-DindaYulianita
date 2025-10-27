@@ -16,7 +16,7 @@ func NewGormDB() *gorm.DB {
         log.Fatal("❌ Gagal konek ke database:", err)
     }
 
-    // ✅ Auto migrate semua tabel penting
+   
     err = db.AutoMigrate(&models.User{})
     if err != nil {
         log.Fatal("❌ Gagal migrate tabel:", err)
